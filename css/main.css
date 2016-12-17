@@ -54,7 +54,7 @@ ul > li > a{
 	color: rgba(255,255,255,0.85);
 	text-decoration:none;
 	text-shadow: none;
-	transition: 1s text-shadow;
+	transition: 0.3s text-shadow;
 }
 ul > li > a:hover{
 	text-shadow: rgba(255, 255, 255, 0.7) 0px 0px 8px;
