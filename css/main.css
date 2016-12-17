@@ -22,7 +22,7 @@ html,body{
 	background-color: rgba(0,0,0,0.4);
 	width: 350px;
 	height: 100%;
-	letter-spacing: 0.02cm;
+	letter-spacing: 0.03cm;
 }
 .header{
 	text-align: center;
@@ -36,6 +36,7 @@ html,body{
 }
 .description{
 	color: rgba(255,255,255,0.9);
+	font-size: 1.3em;
 }
 .footer{
 	margin-left:calc(50% - 125px);
@@ -46,11 +47,44 @@ ul{
 }
 ul > li{
 	float:left;
-	padding:5px;
+	margin-right: 15px;
 	font-size:2em;
-	margin-left:4px;
 }
 ul > li > a{
-	color:#fff;
-	text-decoration:none;	
+	color: rgba(255,255,255,0.85);
+	text-decoration:none;
+	text-shadow: none;
+	transition: 1s text-shadow;
+}
+ul > li > a:hover{
+	text-shadow: rgba(255, 255, 255, 0.7) 0px 0px 8px;
+}
+ul > li > a:active{
+	text-shadow: rgba(255, 255, 255, 0.8) 0px 0px 10px;
+}
+@media screen and (max-width: 850px) {
+	.main{
+		width: 100%;
+	}
+	.name{
+		font-size: 3em;
+	}
+	.description{
+		font-size: 1.6em;
+	}
+	ul > li{
+		font-size: 2.5em;
+    	margin-left: 5px;
+	}
+	.footer{
+	margin-left:calc(50% - 150px);
+	}
+}
+@media screen and (max-width: 400px){
+	.name{
+		font-size: 2.7em;
+	}
+	.description{
+		font-size: 1.3em;
+	}
 }
