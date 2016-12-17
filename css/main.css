@@ -20,7 +20,7 @@ html,body{
 }
 .main{
 	background-color: rgba(0,0,0,0.4);
-	width: 100%;
+	width: 350px;
 	height: 100%;
 	letter-spacing: 0.02cm;
 }
